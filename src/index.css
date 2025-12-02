@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #3366FF;
+  --bg-white: #FFFFFF;
+  --bg-gray-light: #F8F9FA;
+  --bg-gray: #E9ECEF;
+  --text-dark: #1a1a1a;
+  --text-muted: #6c757d;
+  --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition-smooth: 300ms ease;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all var(--transition-smooth);
+  }
+}
